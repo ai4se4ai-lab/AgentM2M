@@ -1,0 +1,45 @@
+services:
+  engine:
+    build:
+      context: .
+      dockerfile: apps/engine/Dockerfile
+    ports: ["4000:4000"]
+    environment:
+      - PORT=4000
+      - DATA_DIR=/data
+      - OLLAMA_DEFAULT_HOST=${OLLAMA_DEFAULT_HOST:-http://host.docker.internal:11434}
+    extra_hosts:
+      # Makes host.docker.internal resolve on Linux (built in on Docker Desktop).
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - engine_data:/data
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: apps/dashboard/Dockerfile
+      args:
+        # NEXT_PUBLIC_* values are inlined into the browser bundle at build time.
+        # Only ports are baked in; the browser uses the host it opened the dashboard at.
+        NEXT_PUBLIC_ENGINE_PORT: "4000"
+        NEXT_PUBLIC_BENCH_PORT: "${BENCH_HOST_PORT:-8000}"
+    ports: ["${DASHBOARD_HOST_PORT:-3000}:3000"]
+    environment:
+      # Server-side (SSR) requests go container-to-container, not via the host.
+      - ENGINE_INTERNAL_URL=http://engine:4000
+      - BENCH_INTERNAL_URL=http://bench:8000
+    depends_on: [engine]
+
+  bench:
+    build:
+      context: apps/bench
+    ports: ["${BENCH_HOST_PORT:-8000}:8000"]
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - bench_data:/app/data
+
+volumes:
+  engine_data:
+  bench_data:

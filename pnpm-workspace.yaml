@@ -1,0 +1,10 @@
+packages:
+  - "packages/*"
+  - "apps/engine"
+  - "apps/dashboard"
+
+allowBuilds:
+  esbuild: true
+
+blockExoticSubdeps: true
+minimumReleaseAge: 10080

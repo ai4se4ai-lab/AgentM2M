@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Fetched dataset metadata and harness run artifacts (real, but large and
+# regenerable via the fetch endpoints / docker_runner -- not source).
+/data/
+
+# Raw per-instance results + aggregates from evaluation runs (regenerable
+# via `python -m evaluation.rqN_*.run`).
+evaluation/rq1_effectiveness/results/
+evaluation/rq3_ablations/results/

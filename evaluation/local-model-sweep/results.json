@@ -1,0 +1,385 @@
+{
+  "config": {
+    "host": "http://localhost:11434",
+    "trials": 2,
+    "budget": 8,
+    "excludedModels": [
+      "nomic-embed-text:latest",
+      "kimi-k3:cloud"
+    ]
+  },
+  "trials": [
+    {
+      "model": "qwen2.5:3b",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 3431
+    },
+    {
+      "model": "qwen2.5:3b",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 1181
+    },
+    {
+      "model": "qwen3.8:27b",
+      "trial": 1,
+      "accepted": false,
+      "cost": 8,
+      "iterations": 2,
+      "wallClockMs": 30860
+    },
+    {
+      "model": "qwen3.8:27b",
+      "trial": 2,
+      "accepted": false,
+      "cost": 8,
+      "iterations": 2,
+      "wallClockMs": 23315
+    },
+    {
+      "model": "qwen3.6:27b",
+      "trial": 1,
+      "accepted": false,
+      "cost": 8,
+      "iterations": 2,
+      "wallClockMs": 44280
+    },
+    {
+      "model": "qwen3.6:27b",
+      "trial": 2,
+      "accepted": false,
+      "cost": 8,
+      "iterations": 2,
+      "wallClockMs": 33626
+    },
+    {
+      "model": "llama3.3:70b-instruct-q3_K_S",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 31965
+    },
+    {
+      "model": "llama3.3:70b-instruct-q3_K_S",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 9614
+    },
+    {
+      "model": "mistral-small:24b",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 20342
+    },
+    {
+      "model": "mistral-small:24b",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 4786
+    },
+    {
+      "model": "phi4-mini:latest",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 5559
+    },
+    {
+      "model": "phi4-mini:latest",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 1850
+    },
+    {
+      "model": "gemma4:e4b",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 19168
+    },
+    {
+      "model": "gemma4:e4b",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 2163
+    },
+    {
+      "model": "llama3.1:8b",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 8240
+    },
+    {
+      "model": "llama3.1:8b",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 2243
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 5818
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 2100
+    },
+    {
+      "model": "gpt-oss:20b",
+      "trial": 1,
+      "accepted": false,
+      "cost": 8,
+      "iterations": 2,
+      "wallClockMs": 21212
+    },
+    {
+      "model": "gpt-oss:20b",
+      "trial": 2,
+      "accepted": false,
+      "cost": 8,
+      "iterations": 2,
+      "wallClockMs": 7321
+    },
+    {
+      "model": "phi4:14b",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 6574
+    },
+    {
+      "model": "phi4:14b",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 3125
+    },
+    {
+      "model": "devstral:24b",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 14163
+    },
+    {
+      "model": "devstral:24b",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 4858
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 8941
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 1495
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "trial": 1,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 9667
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "trial": 2,
+      "accepted": true,
+      "cost": 1,
+      "iterations": 1,
+      "wallClockMs": 4005
+    }
+  ],
+  "summaries": [
+    {
+      "model": "qwen2.5:3b",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 2306,
+      "errors": []
+    },
+    {
+      "model": "llama3.3:70b-instruct-q3_K_S",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 20789.5,
+      "errors": []
+    },
+    {
+      "model": "mistral-small:24b",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 12564,
+      "errors": []
+    },
+    {
+      "model": "phi4-mini:latest",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 3704.5,
+      "errors": []
+    },
+    {
+      "model": "gemma4:e4b",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 10665.5,
+      "errors": []
+    },
+    {
+      "model": "llama3.1:8b",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 5241.5,
+      "errors": []
+    },
+    {
+      "model": "qwen2.5-coder:7b",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 3959,
+      "errors": []
+    },
+    {
+      "model": "phi4:14b",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 4849.5,
+      "errors": []
+    },
+    {
+      "model": "devstral:24b",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 9510.5,
+      "errors": []
+    },
+    {
+      "model": "qwen3-coder:30b",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 5218,
+      "errors": []
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "trials": 2,
+      "successes": 2,
+      "successRate": 1,
+      "meanCostOnSuccess": 1,
+      "meanIterationsOnSuccess": 1,
+      "meanWallClockMsOnSuccess": 6836,
+      "errors": []
+    },
+    {
+      "model": "qwen3.8:27b",
+      "trials": 2,
+      "successes": 0,
+      "successRate": 0,
+      "meanCostOnSuccess": null,
+      "meanIterationsOnSuccess": null,
+      "meanWallClockMsOnSuccess": null,
+      "errors": []
+    },
+    {
+      "model": "qwen3.6:27b",
+      "trials": 2,
+      "successes": 0,
+      "successRate": 0,
+      "meanCostOnSuccess": null,
+      "meanIterationsOnSuccess": null,
+      "meanWallClockMsOnSuccess": null,
+      "errors": []
+    },
+    {
+      "model": "gpt-oss:20b",
+      "trials": 2,
+      "successes": 0,
+      "successRate": 0,
+      "meanCostOnSuccess": null,
+      "meanIterationsOnSuccess": null,
+      "meanWallClockMsOnSuccess": null,
+      "errors": []
+    }
+  ],
+  "failureDiagnosis": {
+    "qwen3.8:27b": "Empty response under bounded num_predict=512 -- Qwen3 hybrid thinking mode likely consumed the entire output budget on internal reasoning tokens before an answer.",
+    "qwen3.6:27b": "Same family/symptom as qwen3.8:27b, presumed same cause.",
+    "gpt-oss:20b": "Returned prose chain-of-thought text that never resolved to JSON, truncated at the token limit -- gpt-oss expects a structured harmony chat format with separate reasoning/answer channels, which the raw /api/generate completion-style request (current OllamaProvider) does not provide.",
+    "note": "Diagnosed by probing each model directly with the exact RA prompt outside the engine. This is a model-router integration gap (no chat-template-aware request path for reasoning-tuned models), not a defect in Lift/Propagate: both models were correctly retried up to k_L times and the run correctly reported budget_exhausted rather than a false success. deepseek-r1:14b, also reasoning-distilled, succeeded -- the failure is architecture-specific, not reasoning-models-in-general."
+  }
+}
